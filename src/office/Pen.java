@@ -1,14 +1,12 @@
 package office;
 
 public class Pen extends OfficeStaff {
-    private double cost;
-    private String producer;
     private String type = "ball";
     private String color = "blue";
     private boolean automatic = false;
 
     public Pen() {
-        ;
+
     }
 
     public Pen(String type, String color, boolean automatic) {
@@ -54,4 +52,6 @@ public class Pen extends OfficeStaff {
                 ", automatic=" + automatic +
                 '}';
     }
+
+
 }

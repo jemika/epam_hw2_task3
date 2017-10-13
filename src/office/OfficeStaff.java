@@ -1,7 +1,7 @@
 package office;
 
 public class OfficeStaff {
-    protected   double cost = 0.0;
+    protected   double cost = 1.0;
     protected String producer = "NoName company";
 
 
