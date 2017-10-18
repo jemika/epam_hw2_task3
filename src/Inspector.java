@@ -1,6 +1,11 @@
 import office.NoteBook;
 import office.Pen;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Inspector {
     public static void main(String[] args) {
         Junior junior = new Junior();
@@ -16,10 +21,23 @@ public class Inspector {
         junior.addThing(pen3);
         junior.addThing(noteBook3);
         junior.addThing(pen2);
-        System.out.println(junior.toString());
+//        System.out.println(junior.toString());
         junior.removeThing(pen2);
-        System.out.println("-----after remove some pen-----");
+//        System.out.println("-----after remove some pen-----");
+//        System.out.println(junior.toString());
+        junior.addThing(noteBook2);
+        junior.addThing(pen2);
+        System.out.println("-----for task #4-----");
         System.out.println(junior.toString());
+        System.out.println(junior.totalCost());
+        System.out.println("-----sort by cost-----");
+        junior.sortByCost();
+        System.out.println(junior.toString());
+        System.out.println("-----sort by name length-----");
+        junior.sortByNameLength();
+        System.out.println(junior.toString());
+
+
 
     }
 }

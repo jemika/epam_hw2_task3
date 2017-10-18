@@ -5,20 +5,23 @@ public class Pen extends OfficeStaff {
     private String color = "blue";
     private boolean automatic = false;
 
-    public Pen() {
 
+    public Pen() {
+        this.name = "Pen";
     }
 
     public Pen(String type, String color, boolean automatic) {
-        this.cost = super.cost;
-        this.producer = super.producer;
+        this.name = "Pen";
         this.type = type;
         this.color = color;
         this.automatic = automatic;
+
     }
 
     public Pen(double cost, String producer, String type, String color, boolean automatic) {
-        super(cost, producer);
+        this.cost = cost;
+        this.producer = producer;
+        this.name = "Pen";
         this.type = type;
         this.color = color;
         this.automatic = automatic;

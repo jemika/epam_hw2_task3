@@ -1,10 +1,15 @@
 package office;
 
-public class OfficeStaff {
-    protected   double cost = 1.0;
+import java.util.Comparator;
+
+public class OfficeStaff  {
+    protected double cost = 1.0;
     protected String producer = "NoName company";
+    protected String name = "General";
 
-
+    public String getName() {
+        return name;
+    }
 
     public OfficeStaff() {
     }
@@ -26,4 +31,9 @@ public class OfficeStaff {
     public void setCost(double cost) {
         this.cost = cost;
     }
+
+//    @Override
+//    public int compareTo(OfficeStaff o) {
+//        return (int) (o.getCost() - this.getCost());
+//    }
 }
