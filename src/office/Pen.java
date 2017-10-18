@@ -44,13 +44,12 @@ public class Pen extends OfficeStaff {
 
     @Override
     public String toString() {
-        return " This Pen is " +
+        return "\nPen (" +
                 "cost=" + cost +
-                ", producer='" + producer + '\'' +
-                ", type='" + type + '\'' +
-                ", color='" + color + '\'' +
-                ", automatic=" + automatic +
-                '}';
+                ", producer='" + producer +
+                ", type='" + type +
+                ", color='" + color +
+                ", automatic=" + automatic + ")";
     }
 
 

@@ -11,12 +11,8 @@ public class OfficeInspector {
         System.out.println(pen1.toString());
         System.out.println(pen2.toString());
         System.out.println(pen3.toString());
+
+
     }
 
-    @Override
-    public String toString() {
-        return "OfficeInspector{" +
-                "officeStaff=" + officeStaff +
-                '}';
-    }
 }

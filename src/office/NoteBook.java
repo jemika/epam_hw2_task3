@@ -1,7 +1,7 @@
 package office;
 
 public class NoteBook extends  OfficeStaff{
-    private int paperQuantity;
+    private int paperQuantity = 48;
 
     public NoteBook(double cost, String producer, int paperQuantity) {
         super(cost, producer);
@@ -15,4 +15,15 @@ public class NoteBook extends  OfficeStaff{
     public NoteBook() {
     }
 
+    public int getPaperQuantity() {
+        return paperQuantity;
+    }
+
+    @Override
+    public String toString() {
+        return "\nNoteBook ("+
+                "paperQuantity=" + paperQuantity +
+                ", cost=" + cost +
+                ", producer='" + producer + ")";
+    }
 }
