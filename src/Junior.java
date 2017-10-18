@@ -1,10 +1,7 @@
 import office.OfficeStaff;
-
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 
 
 class SortJuniorByCost implements Comparator<OfficeStaff> {
@@ -22,8 +19,6 @@ class SortJuniorByNameLength implements Comparator<OfficeStaff> {
         return  (o2.getName().length() - o1.getName().length());
     }
 }
-
-
 
 public class Junior {
     SortJuniorByCost sortJuniorByCost = new SortJuniorByCost();
@@ -59,12 +54,6 @@ public class Junior {
     public void sortByNameLength(){
         Collections.sort(equipment, sortJuniorByNameLength);
     }
-
-//    public void sort(){
-//        Collections.sort(equipment);
-//    }
-
-
 }
 
 

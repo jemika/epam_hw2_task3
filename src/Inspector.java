@@ -1,11 +1,6 @@
 import office.NoteBook;
 import office.Pen;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-
 public class Inspector {
     public static void main(String[] args) {
         Junior junior = new Junior();
@@ -36,8 +31,5 @@ public class Inspector {
         System.out.println("-----sort by name length-----");
         junior.sortByNameLength();
         System.out.println(junior.toString());
-
-
-
     }
 }
